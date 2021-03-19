@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textStart"
+    tools:context=".AddPostActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addposttoolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#06185C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/addpostbackbutton"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/addposttoolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_backspace_24" />
+
+    <ImageView
+        android:id="@+id/postimage"
+        android:layout_width="397dp"
+        android:layout_height="198dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addposttoolbar"
+        app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
+
+    <Button
+        android:id="@+id/postbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="96dp"
+        android:background="#06185C"
+        android:padding="10dp"
+        android:text="Post"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/postcaption"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittext_round_shape"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Write Something ....."
+        android:inputType="textMultiLine"
+        android:padding="18dp"
+        android:textColor="#040303"
+        android:textColorHint="#090909"
+        app:layout_constraintBottom_toTopOf="@+id/postbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postimage" />
+
+    <ProgressBar
+        android:id="@+id/addpostprogressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addposttoolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
