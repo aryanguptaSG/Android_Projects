@@ -10,7 +10,7 @@ _*`Android Studio` as an integrated development environment . `Kotlin` language 
 <div style="display:flex">
 <img style="margin:20px" src="./Images/1.png" width="300">
 <img style="margin:20px"  src="./Images/2.png" width="300">
-<img style="margin:20px"  src="./Images/3.png" width="300">
-<img style="margin:20px"  src="./Images/4.png" width="300">
-<img style="margin:20px"  src="./Images/5.png" width="300">
+<img style="margin:20px"  src="./Images/3.png" >
+<img style="margin:20px"  src="./Images/4.png">
+<img style="margin:20px"  src="./Images/5.png">
 </div>
